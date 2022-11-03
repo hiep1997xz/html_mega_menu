@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'NotoSansJP';
+    font-display: swap;
+    src: url('/libs/clients/common/fonts/Noto_Sans_JP/NotoSansJP-Regular.otf');
+}
+body, button, input, optgroup, select, textarea, p, a, ul, label {
+    font-family: 'NotoSansJP', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a,a:hover,a:focus {
+    text-decoration:none;
+    color: #000000;
+}
+.container {
+    padding: 0;
+}
+/* footer */
+footer {
+    padding: 75px 0 50px 0;
+}
+.footer-left {
+    width: 60%;
+}
+.footer-right {
+    width: 40%;
+}
+.f-l-b1 {
+    margin-bottom: 16px;
+}
+.f-l-b2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 48px;
+}
+.f-l-b3 {
+    display: flex;
+    align-items: center;
+}
+.text-b3 {
+    margin-left: 10px;
+}
+.f-r-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.f-r-text, .text-b3 {
+    font-size: 16px;
+    line-height: 23px;
+}
+.f-r-left, .f-r-right {
+    width: calc(100%/2 - 10px);
+}
+/* footer */
+body{
+    overflow-x: hidden;
+}
+/* breadcrumb */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.breadcrumb-item {
+    color: rgba(0, 0, 0, 0.44);
+}
+.breadcrumb-item.active {
+    color: #000000;
+}
+.right-arrow {
+    margin: 0 13px;
+}
+/* breadcrumb */
+/* header */
+.fixed-top .container {
+    max-width: 100%;
+    padding: 20px 113px;
+}
+.bg-light, footer {
+    background: #DBDBDB !important;
+}
+.logo-header, .logo-footer {
+    width: 140px;
+    height: 60px;
+    display: inline-block;
+}
+.logo-header img {
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    padding: 0;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.site-name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 28px;
+}
+.navbar-light .navbar-nav .show>.nav-link {
+    background: #BDBDBD;
+}
+.navbar-light .navbar-nav .active>.nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover
+{
+    padding: 12px 16px;
+    color: #000000;
+}
+.menu-large {
+    margin-left: 16px;
+}
+.dropdown-toggle  {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+.dropdown-toggle::after {
+    border-top: 7px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    vertical-align: 0.1em;
+    margin-left: 7px;
+}
+.dropdown-menu {
+    margin: 0;
+    border: none;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.44);
+    border-radius: 0;
+}
+.dropdown-content {
+    background: #FFFFFF;
+    border-radius: 0px 0px 16px 16px;
+    padding: 40px 36px 67px;
+}
+.menu-item {
+    width: calc(100%/3 - 18px);
+    margin-right: 27px;
+    margin-bottom: 24px;
+}
+.menu-item:nth-child(3n-3) {
+    margin-right: 0px;
+}
+.header-item {
+    font-size: 18px;
+    line-height: 24px;
+}
+.total-item {
+    background: rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 4px 6px;
+    margin-left: 10px;
+}
+.dropdown .megamenu {
+    padding: 0px 113px 50px;
+}
+.genre-list, .field-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-item {
+    margin-bottom: 12px;
+}
+.title-item .header-item {
+    font-weight: 700; 
+}
+.child-item .total-item {
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    background: #FFFFFF;
+    padding: 1px 6px;
+}
+.content-item .header-item {
+    font-size: 14px;
+    line-height: 22px;
+}
+.child-item {
+    margin-bottom: 8px;
+}
+.field-list .menu-item {
+    margin-bottom: 37px;
+}
+.collapse-child-item {
+    background: white;
+    display: inline-block;
+    content: "";
+    border-bottom: 0;
+    border-top: 8px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    vertical-align: 0.1em;
+    margin-left: 7px;
+}
+.collapse-child-item:not(.collapsed) {
+    transform: rotate(180deg);
+}
+.title-child-item {
+    margin-bottom: 6px;
+}
+.content-child-item {
+    padding-left: 16px;
+    border-left: 1px solid #EEEEEE;
+}
+.child-item-collapse {
+    margin-bottom: 0;
+}
+.menu-large {
+    position: static !important;
+}
+.megamenu {
+padding: 20px 20px;
+width: 100%;
+}
+
+.megamenu > div > li > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.megamenu > div > li > ul > li {
+    list-style: none;
+}
+
+.megamenu > div > li > ul > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: normal;
+}
+
+.megamenu > div > li > ul > li > a:hover,
+.megamenu > div > li > ul > li > a:focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+}
+
+.megamenu.disabled > a,
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    color: #999999;
+}
+
+.megamenu.disabled > a:hover,
+.megamenu.disabled > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+    cursor: not-allowed;
+}
+
+.megamenu.dropdown-header {
+    color: #428bca;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .megamenu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .megamenu > li {
+        margin-bottom: 30px;
+    }
+    .megamenu > li:last-child {
+        margin-bottom: 0;
+    }
+    .megamenu.dropdown-header {
+        padding: 3px 15px !important;
+    }
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        color: #fff;
+    }
+}
+/* header */
